@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class BasicJava {
 
     public static void main(String[] args) {
@@ -35,10 +37,18 @@ public class BasicJava {
         System.out.println(sum);
 
         getNumber(String.valueOf(sum));
-        //------------------------------------------
+
+
+        //-------------------------------------
+        Scanner scanner = new Scanner(System.in);
+        String letter = scanner.next();
+        char character = scanner.next().charAt(0);
+        System.out.println(letter);
+        System.out.println(character);
     }
 
     public static void getNumber(String num) {
         System.out.println(num);
     }
+
 }
